@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pincer"
-version = "0.15.2"
+version = "0.15.3"
 description = "Discord API wrapper rebuild from scratch."
 authors = [
     "Arthurdw <arthur@pincer.dev>",
@@ -35,7 +35,7 @@ discord = "https://discord.gg/pincer"
 python = "^3.8"
 aiohttp = "~3.8.0"
 # "img" extras
-Pillow = { version = "8.4.0", optional = true }
+Pillow = { version = "9.0.0", optional = true }
 # "speed" extras
 orjson = { version = "^3.5.4", optional = true }
 Brotli = { version = "^1.0.9", optional = true }
@@ -45,11 +45,12 @@ cchardet = { version = "^2.1.7", optional = true }
 [tool.poetry.dev-dependencies]
 coverage = "6.2"
 flake8 = "4.0.1"
-tox = "3.24.4"
+tox = "3.24.5"
 pre-commit = "2.16.0"
 pytest = "6.2.5"
 pytest-cov = "3.0.0"
-mypy = "0.910"
+pytest-asyncio = "0.16.0"
+mypy = "0.931"
 
 [tool.poetry.extras]
 img = ["Pillow"]
